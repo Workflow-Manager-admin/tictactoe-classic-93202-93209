@@ -1,0 +1,33 @@
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: var(--kavia-dark);
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 80px;
+  margin: 4px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.square:hover:not(:disabled) {
+  border-color: var(--kavia-orange);
+  background-color: rgba(232, 122, 65, 0.1);
+}
+
+.square-x {
+  color: #FF8B4D;
+}
+
+.square-o {
+  color: #4D9EFF;
+}
+
+.square:disabled {
+  cursor: not-allowed;
+}
