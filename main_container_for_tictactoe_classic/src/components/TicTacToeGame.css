@@ -1,0 +1,35 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.game-title {
+  color: var(--kavia-orange);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.game-status {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  height: 40px;
+}
+
+.reset-button {
+  margin-top: 20px;
+}
+
+/* Animation for game status */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.game-status {
+  animation: fadeIn 0.3s ease-in-out;
+}
